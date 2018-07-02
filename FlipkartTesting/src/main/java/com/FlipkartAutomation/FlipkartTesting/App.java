@@ -25,8 +25,8 @@ public class App
     public boolean loginUser() throws Exception
     {
     	Thread.sleep(1000);
-    	driver.findElement(By.className("_2zrpKA")).sendKeys("krk5512@gmail.com");
-    	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input")).sendKeys("kuttankumarkr");
+    	driver.findElement(By.className("_2zrpKA")).sendKeys("k********@xyz.com");
+    	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input")).sendKeys("k**************");
     	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button")).click();
     	Thread.sleep(1000);
     	userName = driver.findElement(By.xpath("//*[@id=\"container\"]/div/header/div[1]/div/div/div/div[2]/div[1]/div/div/div/span/div")).getText().toString();
