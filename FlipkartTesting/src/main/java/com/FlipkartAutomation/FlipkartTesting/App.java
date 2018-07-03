@@ -47,7 +47,8 @@ public class App
         for (String winHandle : driver.getWindowHandles()) { 
 	           driver.switchTo().window(winHandle);        // switch focus of WebDriver to the next found window handle (that's your newly opened window)              
 	       }
-    	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("#container > div > div:nth-child(2) > div > div > div > div._1GRhLX._3N5d1n > div > div._3S6yHr._1i2f2k > div._1k1QCg._3QNwd7 > ul > li:nth-child(2) > form > button")).click();
-    }
+         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div/div/div/div[1]/div/div[1]/div[2]/ul/li[2]/form/button")).click();
+   	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+       }
 }
